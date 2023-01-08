@@ -1,5 +1,8 @@
 package com.nkspring.core.SpringCoreConcepts;
 
+import com.nkspring.core.SpringCoreConcepts.couple.Animal;
+import com.nkspring.core.SpringCoreConcepts.couple.Cat;
+import com.nkspring.core.SpringCoreConcepts.couple.Dog;
 import com.nkspring.core.SpringCoreConcepts.couple.Person;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,7 +11,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringCoreConceptsApplication {
 
 	public static void main(String[] args) {
-		Person p = new Person();
+//		Animal animal = new Dog();
+		Animal animal = new Cat();
+		Person p = new Person(animal);
 		p.playWithAnimal();
 		SpringApplication.run(SpringCoreConceptsApplication.class, args);
 	}
