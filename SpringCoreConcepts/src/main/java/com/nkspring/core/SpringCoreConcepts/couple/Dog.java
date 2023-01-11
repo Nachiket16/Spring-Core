@@ -1,5 +1,8 @@
 package com.nkspring.core.SpringCoreConcepts.couple;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Dog implements Animal{
 
     @Override

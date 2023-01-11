@@ -10,8 +10,6 @@
  >>* @ComponentScan(basePackages = {"",""})
  >>* This call other pkg as per the requirement
 
-
-
 >### Bean: 
 > When the Object is managed by the spring boot it is called as the bean.
 >
