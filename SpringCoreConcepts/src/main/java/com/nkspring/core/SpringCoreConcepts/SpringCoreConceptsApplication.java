@@ -4,6 +4,7 @@ import com.nkspring.core.SpringCoreConcepts.couple.Animal;
 import com.nkspring.core.SpringCoreConcepts.couple.Cat;
 import com.nkspring.core.SpringCoreConcepts.couple.Dog;
 import com.nkspring.core.SpringCoreConcepts.couple.Person;
+import com.nkspring.core.SpringCoreConcepts.test.Test;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -11,6 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 //@ComponentScan(basePackages = {"",""})
+@ComponentScan(basePackages = {"com.nkspring.core","test"})
 public class SpringCoreConceptsApplication {
 
 	public static void main(String[] args) {
@@ -29,6 +31,10 @@ public class SpringCoreConceptsApplication {
 		ApplicationContext context = SpringApplication.run(SpringCoreConceptsApplication.class, args);
 		Person peronBean = context.getBean(Person.class);
 		peronBean.playWithAnimal();
+
+		Test testBean = context.getBean(Test.class);
+		testBean.testing();
+
 	}
 
 }
