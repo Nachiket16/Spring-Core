@@ -18,3 +18,6 @@
 > This will make the class as the Bean / Component
 > 
 > So Object will be created by the Spring framework
+
+@Primary
+@Qualifier

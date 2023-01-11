@@ -35,6 +35,12 @@ public class SpringCoreConceptsApplication {
 		Test testBean = context.getBean(Test.class);
 		testBean.testing();
 
+		//Get from the Context
+		Animal cat = context.getBean("cat", Animal.class);
+		Animal dog = context.getBean("dog", Animal.class);
+		cat.play();
+		dog.play();
+
 	}
 
 }
