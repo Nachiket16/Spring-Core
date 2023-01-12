@@ -31,6 +31,7 @@ public class SpringCoreConceptsApplication {
 		ApplicationContext context = SpringApplication.run(SpringCoreConceptsApplication.class, args);
 		Person peronBean = context.getBean(Person.class);
 		peronBean.playWithAnimal();
+		peronBean.detailOfPerson();
 
 		Test testBean = context.getBean(Test.class);
 		testBean.testing();
