@@ -1,13 +1,11 @@
 package com.nkspring.core.SpringCoreConcepts;
 
-import com.nkspring.core.SpringCoreConcepts.couple.Animal;
-import com.nkspring.core.SpringCoreConcepts.couple.Cat;
-import com.nkspring.core.SpringCoreConcepts.couple.Dog;
-import com.nkspring.core.SpringCoreConcepts.couple.Person;
+import com.nkspring.core.SpringCoreConcepts.couple.*;
 import com.nkspring.core.SpringCoreConcepts.test.Test;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
@@ -42,6 +40,12 @@ public class SpringCoreConceptsApplication {
 //		cat.play();
 //		dog.play();
 
+	}
+
+	//Declaring the bean using @Bean
+	@Bean
+	public Samosa getSamosa(){
+		return new Samosa();
 	}
 
 }

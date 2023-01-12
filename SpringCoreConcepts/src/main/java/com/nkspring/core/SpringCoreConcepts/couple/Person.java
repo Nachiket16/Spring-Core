@@ -17,6 +17,9 @@ public class Person {
     @Autowired
     Student student;
 
+    @Autowired
+    Samosa samosa;
+
     //For constructor based injection use Qualifier in the constructor
 //    @Autowired
 //    public Person(@Qualifier("dog") Animal animal) {
@@ -58,6 +61,7 @@ public class Person {
 
     public void detailOfPerson() {
         student.detail();
+        samosa.eat();
     }
 
 }
