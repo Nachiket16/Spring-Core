@@ -18,6 +18,7 @@ public class Person {
     Student student;
 
     @Autowired
+    @Qualifier("samosa2")
     Samosa samosa;
 
     //For constructor based injection use Qualifier in the constructor

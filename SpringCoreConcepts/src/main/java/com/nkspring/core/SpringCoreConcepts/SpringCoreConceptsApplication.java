@@ -43,9 +43,9 @@ public class SpringCoreConceptsApplication {
 	}
 
 	//Declaring the bean using @Bean
-	@Bean
-	public Samosa getSamosa(){
-		return new Samosa();
-	}
+//	@Bean
+//	public Samosa getSamosa(){
+//		return new Samosa();
+//	}
 
 }

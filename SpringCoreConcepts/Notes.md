@@ -25,11 +25,29 @@
 
 #########################################################
 
-When To Use which Autowired Injection ?     
+### When To Use which Autowired Injection ?     
 1- Constructor Based Autowired      
     - When dependency are mandatory in that case use Constructor based autowired.   
 2- Setter Based Autowired   
     - For Optional dependency use the Setter based Autowired.      
 3- Field Based Autowired    
     - For Optional dependency.
+
+
+### Scope of the Bean
+
+**Singleton:** Only one instance of the spring bean will be created for the spring container.              
+By Default scope is singleton.
+
+**Prototype:** New instance will be created every time the bean is requested from the spring container.
+
+**Request Scope:** New Instance of the bean will be created for each HTTP request.                      
+available for the Web Application.
+                
+**Session Scope:** A new bean will be created for each HTTP session by the container.       
+
+**Application:** The application scope created the bean instance for the lifecycle of a ServletContext.
+
+**WebSocket:** WebSocket scoped beans are stored in teh WebSocket session attributes.
+
     
