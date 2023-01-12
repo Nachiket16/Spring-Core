@@ -21,3 +21,15 @@
 
 @Primary
 @Qualifier
+
+
+#########################################################
+
+When To Use which Autowired Injection ?     
+1- Constructor Based Autowired      
+    - When dependency are mandatory in that case use Constructor based autowired.   
+2- Setter Based Autowired   
+    - For Optional dependency use the Setter based Autowired.      
+3- Field Based Autowired    
+    - For Optional dependency.
+    
