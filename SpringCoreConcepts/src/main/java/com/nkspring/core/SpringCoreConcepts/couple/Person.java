@@ -12,8 +12,15 @@ public class Person {
     Animal animal ;
 
     //For constructor based injection use Qualifier in the constructor
+//    @Autowired
+//    public Person(@Qualifier("dog") Animal animal) {
+//        this.animal = animal;
+//    }
+
+    //Constructor Based Injection
     @Autowired
-    public Person(@Qualifier("dog") Animal animal) {
+    public Person(Animal animal){
+        System.out.println("calling constructor...autowiring");
         this.animal = animal;
     }
 

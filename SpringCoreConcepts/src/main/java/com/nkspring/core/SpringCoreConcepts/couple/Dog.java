@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-@Qualifier("dog")   // == @Component("dog") [If component name is not given]
+//@Qualifier("dog")   // == @Component("dog") [If component name is not given]
 //@Primary
 public class Dog implements Animal{
 
