@@ -23,7 +23,7 @@
 @Qualifier
 
 
-___
+___ 
 
 ### When To Use which Autowired Injection ?     
 1- Constructor Based Autowired      
@@ -51,4 +51,9 @@ available for the Web Application.
 **WebSocket:** WebSocket scoped beans are stored in teh WebSocket session attributes.
 
 ---
-#### When you Declare the bean for the context you will get singleton object. You can do this by using the @Scope("singleton") annotation as well.
+### When you Declare the bean for the context you will get singleton object. You can do this by using the @Scope("singleton") annotation as well.
+> BY DEFAULT SCOPE IS ->SINGLETON
+        
+@Scope("singleton") -> Same Hash Code
+@Scope("prototype") -> Diff Hash Code
+@Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)

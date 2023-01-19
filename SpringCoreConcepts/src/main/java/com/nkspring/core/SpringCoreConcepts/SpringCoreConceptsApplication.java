@@ -2,6 +2,7 @@ package com.nkspring.core.SpringCoreConcepts;
 
 import com.nkspring.core.SpringCoreConcepts.couple.*;
 import com.nkspring.core.SpringCoreConcepts.scope.Pepsi;
+import com.nkspring.core.SpringCoreConcepts.scope.Soda;
 import com.nkspring.core.SpringCoreConcepts.test.Test;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -43,13 +44,26 @@ public class SpringCoreConceptsApplication {
 
 		//Bean Scope
 		//First Request for Pepsi bean
-		Pepsi bean = context.getBean(Pepsi.class);
-		System.out.println("bean = " + bean);
-		bean.drink();
+//		Pepsi bean = context.getBean(Pepsi.class);
+//		System.out.println("bean = " + bean);
+//		bean.drink();
+//
+//		//Second request for the Pepsi bean
+//		Pepsi bean2 = context.getBean(Pepsi.class);
+//		System.out.println("bean2 = " + bean2);
 
-		//Second request for the Pepsi bean
-		Pepsi bean2 = context.getBean(Pepsi.class);
-		System.out.println("bean2 = " + bean2);
+
+		Pepsi pepsi = context.getBean(Pepsi.class);
+		System.out.println(pepsi);
+		Soda soda = pepsi.getSoda();
+		System.out.println(soda);
+
+		Pepsi pepsi1 = context.getBean(Pepsi.class);
+		System.out.println("pepsi1 = " + pepsi1);
+		Soda soda1 = pepsi1.getSoda();
+		System.out.println("soda1 = " + soda1);
+
+
 	}
 
 	//Declaring the bean using @Bean
