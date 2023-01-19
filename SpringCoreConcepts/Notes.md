@@ -57,3 +57,10 @@ available for the Web Application.
 @Scope("singleton") -> Same Hash Code
 @Scope("prototype") -> Diff Hash Code
 @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+
+## Bean Life Cycle
+
+Spring Container Manages the bean object.
+> **@PostConstruct**      //When Bean is created then this will run automatically by the Bean LifeCycle
+
+> **@PreDestroy**     //Called just Before the closing/ destroy it will call this method. eg-> To close the connection

@@ -53,7 +53,7 @@ public class SpringCoreConceptsApplication {
 //		System.out.println("bean2 = " + bean2);
 
 
-		Pepsi pepsi = context.getBean(Pepsi.class);
+/*		Pepsi pepsi = context.getBean(Pepsi.class);
 		System.out.println(pepsi);
 		Soda soda = pepsi.getSoda();
 		System.out.println(soda);
@@ -62,6 +62,7 @@ public class SpringCoreConceptsApplication {
 		System.out.println("pepsi1 = " + pepsi1);
 		Soda soda1 = pepsi1.getSoda();
 		System.out.println("soda1 = " + soda1);
+*/
 
 
 	}
