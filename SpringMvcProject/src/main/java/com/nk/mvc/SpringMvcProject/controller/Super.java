@@ -1,10 +1,10 @@
-package com.nk.mvc.SpringMvcProject;
+package com.nk.mvc.SpringMvcProject.controller;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@Component
-@RequestMapping
+@Controller
 public class Super {
 
 
@@ -14,6 +14,7 @@ public class Super {
         return "about";
     }
 
+    @RequestMapping("/service")
     public String aboutService(){
         System.out.println("Inside the Services method");
         return "service";
